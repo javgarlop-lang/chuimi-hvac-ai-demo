@@ -70,7 +70,8 @@ def init_db():
                 ("06/11/26 09:10", "Empresa mantenedora", "Se revisa Booster 1 en escenario de prueba. Se deja pendiente validar la válvula y el comportamiento con demanda estable.", ""),
                 ("07/11/26 11:30", "Operador de central", "Se detecta arranque no esperado de Booster 2. Registrar hora, modo de funcionamiento y orden de control asociada.", ""),
                 ("08/11/26 15:05", "Ingeniería", "Antes de proponer cambios de secuencia, verificar restricciones eléctricas y lógica aprobada de funcionamiento.", ""),
-                ("09/11/26 08:00", "Coordinación técnica", "Ejemplo de cierre: equipos devueltos a modo automático tras comprobaciones y autorización del responsable.")
+              ("09/11/26 08:00", "Coordinación técnica", "Ejemplo de cierre: equipos devueltos a modo automático tras comprobaciones y autorización del responsable.", ""),
+("06/11/26 09:10", "Empresa mantenedora", "Se revisa Booster 1 en escenario de prueba. Se deja pendiente validar la válvula y el comportamiento con demanda estable.", ""),
             ]
             for d, sender, body, attachment in demo:
                 con.execute(
