@@ -66,12 +66,12 @@ def init_db():
                 ("04/11/26 08:15", "Técnico de mantenimiento", "Se recibe aviso de alarma en Enfriadora E3. Se solicita revisar código de alarma y temperaturas de entrada y salida.", ""),
                 ("04/11/26 10:40", "Empresa mantenedora", "Se realiza inspección inicial de E3. Se recomienda contrastar el histórico del controlador antes de concluir la causa.", ""),
                 ("05/11/26 07:55", "Operador de central", "Se observa presión diferencial inestable en el circuito secundario durante el cambio de demanda.", ""),
-               ("09/11/26 08:00", "Coordinación técnica", "Ejemplo de cierre: equipos devueltos a modo automático tras comprobaciones y autorización del responsable.", "")
+               ("09/11/26 08:00", "Coordinación técnica", "Ejemplo de cierre: equipos devueltos a modo automático tras comprobaciones y autorización del responsable.", ""),
                 ("06/11/26 09:10", "Empresa mantenedora", "Se revisa Booster 1 en escenario de prueba. Se deja pendiente validar la válvula y el comportamiento con demanda estable.", ""),
                 ("07/11/26 11:30", "Operador de central", "Se detecta arranque no esperado de Booster 2. Registrar hora, modo de funcionamiento y orden de control asociada.", ""),
                 ("08/11/26 15:05", "Ingeniería", "Antes de proponer cambios de secuencia, verificar restricciones eléctricas y lógica aprobada de funcionamiento.", ""),
               ("09/11/26 08:00", "Coordinación técnica", "Ejemplo de cierre: equipos devueltos a modo automático tras comprobaciones y autorización del responsable.", ""),
-("06/11/26 09:10", "Empresa mantenedora", "Se revisa Booster 1 en escenario de prueba. Se deja pendiente validar la válvula y el comportamiento con demanda estable.", ""),
+             ("06/11/26 09:10", "Empresa mantenedora", "Se revisa Booster 1 en escenario de prueba. Se deja pendiente validar la válvula y el comportamiento con demanda estable.", ""),
             ]
             for d, sender, body, attachment in demo:
                 con.execute(
@@ -82,7 +82,7 @@ def init_db():
             demo_incidents = [
                 ("Alarma comunicada en Enfriadora E3", "Enfriadora E3", "Alarma / avería", "Alta", "Por revisar", "Ejemplo ficticio. Revisar código de alarma y datos del controlador.", 1),
                 ("Presión diferencial inestable", "Bombeo secundario", "Hidráulica / bombeo", "Media", "En curso", "Ejemplo ficticio. Correlacionar presión, caudal, variadores y válvulas.", 3),
-                ("Arranque no esperado de Booster 2", "Booster 2", "Hidráulica / bombeo", "Media", "Abierta", "Ejemplo ficticio. Revisar modo, señal de mando y registro horario.", 6)
+                ("Arranque no esperado de Booster 2", "Booster 2", "Hidráulica / bombeo", "Media", "Abierta", "Ejemplo ficticio. Revisar modo, señal de mando y registro horario.", 6),
             ]
             for title, equipment, category, priority, status, desc, mid in demo_incidents:
                 con.execute(
