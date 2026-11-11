@@ -66,7 +66,7 @@ def init_db():
                 ("04/11/26 08:15", "Técnico de mantenimiento", "Se recibe aviso de alarma en Enfriadora E3. Se solicita revisar código de alarma y temperaturas de entrada y salida.", ""),
                 ("04/11/26 10:40", "Empresa mantenedora", "Se realiza inspección inicial de E3. Se recomienda contrastar el histórico del controlador antes de concluir la causa.", ""),
                 ("05/11/26 07:55", "Operador de central", "Se observa presión diferencial inestable en el circuito secundario durante el cambio de demanda.", ""),
-                ("05/11/26 12:20", "Ingeniería", "Pendiente comprobar señal del transmisor de presión diferencial y posición de válvulas. No modificar consignas sin autorización.", ""),
+               ("09/11/26 08:00", "Coordinación técnica", "Ejemplo de cierre: equipos devueltos a modo automático tras comprobaciones y autorización del responsable.", "")
                 ("06/11/26 09:10", "Empresa mantenedora", "Se revisa Booster 1 en escenario de prueba. Se deja pendiente validar la válvula y el comportamiento con demanda estable.", ""),
                 ("07/11/26 11:30", "Operador de central", "Se detecta arranque no esperado de Booster 2. Registrar hora, modo de funcionamiento y orden de control asociada.", ""),
                 ("08/11/26 15:05", "Ingeniería", "Antes de proponer cambios de secuencia, verificar restricciones eléctricas y lógica aprobada de funcionamiento.", ""),
